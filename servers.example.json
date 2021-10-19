@@ -16,6 +16,7 @@
         "name": "expect 404",
         "url": "https://httpbin.org/status/404",
         "method": "PATCH",
-        "status": [404]
+        "status": [404],
+        "timeout": 1000
     }
 ]

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`normalize minimal 1`] = `
+Object {
+  "method": "GET",
+  "name": "https://github.com",
+  "payload": undefined,
+  "status": [Function],
+  "timeout": 0,
+  "url": "https://github.com",
+}
+`;
