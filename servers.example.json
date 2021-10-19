@@ -1,0 +1,21 @@
+[
+    {
+        "name": "github",
+        "url": "https://github.com/mtib",
+        "method": "GET",
+        "status": [200]
+    },
+    {
+        "url": "https://httpbin.org/post",
+        "method": "POST",
+        "payload": {
+            "key": "value"
+        }
+    },
+    {
+        "name": "expect 404",
+        "url": "https://httpbin.org/status/404",
+        "method": "PATCH",
+        "status": [404]
+    }
+]
