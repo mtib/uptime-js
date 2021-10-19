@@ -1,0 +1,19 @@
+{
+  "name": "uptime",
+  "version": "1.0.0",
+  "author": "Markus Becker <mtib.becker@gmail.com>",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "colors": "^1.4.0"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "NODE_OPTIONS='--experimental-specifier-resolution=node' node src/index",
+    "example": "yarn start servers.example.json"
+  }
+}
