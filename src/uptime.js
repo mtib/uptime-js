@@ -8,10 +8,14 @@ export const checkUptimeEntry = (server) => {
         url: server?.url,
         method: server?.method,
         data: server?.payload,
-        validateStatus: server?.status ? (status) => { return server?.status.includes(status); } : undefined,
+        validateStatus: undefined,
     }).then((response) => {
-        return { success: true, status: response.status };
+        return { success: (server?.status ? (status) => { 
+            return server?.status.includes(status); 
+        } : (status) => {
+            return status >= 200 && status < 300; 
+        })(response.status), status: response.status };
     }).catch((error) => {
-        return { success: false, status: error.status };
+        return { success: false, status: error };
     });
 }
